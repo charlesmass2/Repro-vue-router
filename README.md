@@ -1,14 +1,11 @@
 # Repro vue-router
 
-This template should help get you started developing with Vue 3 in Vite.
+I made this simple repo to reproduce the issue in version 4.3.1 where router.resolve wouldn't keep query params.
+To reproduce the issue, `npm i && npm run dev`, then click on the "about" button, and click on "Set query param".
+You will notice that nothing happens.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+If you change the version of vue-router in package.json to 4.3.0, and do the same thing, when clicking "Set query param",
+the URL will change and "Query params exists !" will appear.
 
 ## Project Setup
 
